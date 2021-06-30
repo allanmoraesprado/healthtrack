@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="shortcut icon" href="/images/favicon.ico">
+    <title>Health Track</title>
+</head>
+<body>
+  <div id="container-imagem">
+    <div class="container" >
+      <a class="links" id="paracadastro"></a>
+      <a class="links" id="paralogin"></a>      
+      <div class="content">  
+        <!--FORMULÁRIO DE LOGIN-->
+        <div id="login">   
+            <h1>Login</h1> 
+            <p> 
+              <label for="nome_login">Login</label>
+              <input id="nome_login" name="nome_login" required="required" type="text" placeholder="login"/>
+            </p>            
+            <p> 
+              <label for="password">Senha</label>
+              <input id="password" name="password" required="required" type="password" placeholder="ex. 1234" /> 
+            </p>             
+            <p> 
+              <input type="checkbox" name="manterlogado" id="manterlogado" value="" /> 
+              <label for="manterlogado">Manter-me logado</label>
+            </p>
+            <p>
+                <form method="get" action="/home.html">
+                <input type="hidden">
+                <button type="submit" class="logar">  
+                  Logar
+                </button>
+            </p>
+            <p class="link">
+              Ainda não tem conta?
+              <a href="#paracadastro">Cadastre-se</a>
+            </p>
+          </form> 
+        </div>  
+        <!--FORMULÁRIO DE CADASTRO-->
+        <div id="cadastro">
+          <form method="post" action=""> 
+            <h1>Cadastro</h1>             
+            <p> 
+              <label for="nome_cad">Nome</label>
+              <input id="nome_cad" name="nome_cad" required="required" type="text" placeholder="nome" />
+            </p>   
+            <p> 
+              <label for="login_cad">Login</label>
+              <input id="login_cad" name="login_cad" required="required" type="text" placeholder="login"/>
+            </p>                                 
+            <p> 
+              <label for="senha_cad">Senha</label>
+              <input id="senha_cad" name="senha_cad" required="required" type="password" placeholder="ex. 1234"/>
+            </p>
+            <p> 
+              <label for="rep_senha_cad">Confirme sua senha</label>
+              <input id="rep_senha_cad" name="rep_senha_cad" required="required" type="password" placeholder="senha"/>
+            </p>
+            <p> 
+              <label for="email_cad">E-mail</label>
+              <input id="email_cad" name="email_cad" required="required" type="email" placeholder="ex. healthtrack@exemplo.com"/> 
+            </p>            
+            <p> 
+              <label for="tel_cad">Telefone</label>
+              <input id="tel_cad" name="tel_cad" required="required" type="tel" placeholder="ex. +55 (99) 9999-9999"/> 
+            </p>
+            <p> 
+              <input type="submit" value="Cadastrar"/> 
+            </p>             
+            <p class="link">  
+              Já tem conta?
+              <a href="#paralogin"> Ir para Login </a>
+            </p>
+          </form>
+        </div>
+      </div>
+    </div> 
+  </div>
+  </body>
+</html>

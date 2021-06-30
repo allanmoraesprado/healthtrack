@@ -1,0 +1,123 @@
+/* Estilo do body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Icon */
+.icon {
+  background-image: url(/images/icon.ico);
+}
+
+/* Header */
+.header {
+  padding: 200px;
+  text-align: center;
+  color: #ffffff;
+  position: relative;
+  background: url('/images/06.jpg');
+  background-size: cover;
+}
+
+/* Tamanho do h1 */
+.header h1 {
+  font-size: 50px;
+}
+
+/* Estilo do navbar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Estilo dos links do navbar */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Link alinhado na direita */
+.navbar a.right {
+  float: right;
+}
+
+/* Mudar a cor ao passar por cima */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Coluna do container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Sidebar */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Inserção de texto */
+.text-box {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  color: whitesmoke;
+  background-image: url(/images/05.jpg);
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: cover;
+}
+
+/* Layout responsivo - quando a tela for menor que 700px (wide), faz as duas colunas pararem uma em cima da outra, invés de uma próxima da outra */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Layout responsivo - quando a tela for menor que 400px (wide), faz os links de navegação um em cima do outro, invés de um próximo ao outro */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+
+/* Imagens sobre o app */
+.image_1{
+  background-image:url(/images/02.jpg)
+}
+
+.image_2{
+  background-image:url(/images/07.jpg);
+  background-repeat: no-repeat;
+}
+
+.image_3{
+  background-image:url(/images/08.jpg)
+}
